@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 04, 2016 at 10:42 AM
+-- Generation Time: Aug 04, 2016 at 10:45 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.6
 
@@ -19,25 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `yii2advanced`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `migration`
---
-
-CREATE TABLE `migration` (
-  `version` varchar(180) NOT NULL,
-  `apply_time` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `migration`
---
-
-INSERT INTO `migration` (`version`, `apply_time`) VALUES
-('m000000_000000_base', 1470300142),
-('m130524_201442_init', 1470300149);
 
 -- --------------------------------------------------------
 
@@ -58,14 +39,15 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Indexes for dumped tables
+-- Dumping data for table `user`
 --
 
+INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES
+(1, 'jorome', 'N70cLHEbnRXp5_bFdtDEAjyu_7zBQvdB', '$2y$13$SKho/.4DF5XO67OAtFjXYuHgRUAZ1U0LMzFKbCWNXSJcx7to0VvRG', NULL, 'joromethegreat@gmail.com', 10, 1470300324, 1470300324);
+
 --
--- Indexes for table `migration`
+-- Indexes for dumped tables
 --
-ALTER TABLE `migration`
-  ADD PRIMARY KEY (`version`);
 
 --
 -- Indexes for table `user`
@@ -84,7 +66,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
