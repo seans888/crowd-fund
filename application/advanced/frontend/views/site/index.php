@@ -9,7 +9,6 @@ $this->title = 'Crowd Funding';
 	
     <div class="jumbotron">
         <h1>Welcome To Tahanan Foundation!</h1>
-		<img src="c1.jpg" width="100" height="100" alt="CHURCH"/>
         <p class="lead"></p>
 		
 
