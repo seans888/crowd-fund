@@ -11,7 +11,8 @@ $this->title = 'Crowd Funding';
         <h1>Welcome To Tahanan Foundation!</h1>
         <p class="lead"></p>
 		
-
+		
+		<img src="church2.jpg" width="100" height="100" alt="BURGER">
 
         <p><a class="btn btn-lg btn-success" href="http://www.youtube.com ">Donate money</a></p>
     </div>
