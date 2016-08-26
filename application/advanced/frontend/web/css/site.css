@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-	background-image: url("../images/church.jpg");
+	background-color: white;
 }
 
 .wrap {
