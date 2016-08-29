@@ -1,7 +1,11 @@
 html,
 body {
     height: 100%;
-	background-color: white;
+	background-image: url("../images/church2.jpg");
+	background-repeat: no-repeat;
+	background-position: center; 
+    background-attachment: fixed;
+	background-size: 100% 100%;
 }
 
 .wrap {
