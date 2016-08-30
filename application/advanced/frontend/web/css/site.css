@@ -21,7 +21,7 @@ body {
 
 .footer {
     height: 60px;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     border-top: 1px solid #ddd;
     padding-top: 20px;
 }
@@ -89,13 +89,28 @@ a.desc:after {
 .hint-block {
     display: block;
     margin-top: 5px;
-    color: #999;
+    color: #ffffff;
 }
+div.col-lg-4{
+color: black !important;
+background-color: white;
+opacity: .8;
+border-radius: 5px;
+height: 200px;
+width: 350px;
+margin-left: 15px;
 
+}
+h1{
+color: black !important;
+background-color: white;
+opacity: .8;
+border-radius: 5px;
+}
 .error-summary {
-    color: #a94442;
-    background: #fdf7f7;
-    border-left: 3px solid #eed3d7;
+    color: #ffffff !important;
+    background: #ffffff;
+    border-left: 3px solid #ffffff;
     padding: 10px 20px;
     margin: 0 0 15px 0;
 }
