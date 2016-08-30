@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\DonorSearch */
+/* @var $model app\models\ProjectSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="donor-search">
+<div class="project-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -17,11 +17,21 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'donor_fname') ?>
+    <?= $form->field($model, 'project_name') ?>
 
-    <?= $form->field($model, 'donor_lname') ?>
+    <?= $form->field($model, 'project_objective') ?>
 
-    <?= $form->field($model, 'donor_address') ?>
+    <?= $form->field($model, 'started_date') ?>
+
+    <?= $form->field($model, 'duration') ?>
+
+    <?php // echo $form->field($model, 'cost') ?>
+
+    <?php // echo $form->field($model, 'fund_resources') ?>
+
+    <?php // echo $form->field($model, 'people_involve') ?>
+
+    <?php // echo $form->field($model, 'beneficiaries') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

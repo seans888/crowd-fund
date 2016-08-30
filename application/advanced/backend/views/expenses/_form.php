@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Donor */
+/* @var $model common\models\Expenses */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="donor-form">
+<div class="expenses-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'donor_fname')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'id')->textInput() ?>
 
-    <?= $form->field($model, 'donor_lname')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'report_Id')->textInput() ?>
 
-    <?= $form->field($model, 'donor_address')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'expenses_report')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

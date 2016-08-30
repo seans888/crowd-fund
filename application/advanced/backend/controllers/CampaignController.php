@@ -3,16 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use app\models\Donor;
-use app\models\DonorSearch;
+use app\models\Campaign;
+use app\models\CampaignSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * DonorController implements the CRUD actions for Donor model.
+ * CampaignController implements the CRUD actions for Campaign model.
  */
-class DonorController extends Controller
+class CampaignController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,12 +30,12 @@ class DonorController extends Controller
     }
 
     /**
-     * Lists all Donor models.
+     * Lists all Campaign models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new DonorSearch();
+        $searchModel = new CampaignSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class DonorController extends Controller
     }
 
     /**
-     * Displays a single Donor model.
+     * Displays a single Campaign model.
      * @param integer $id
      * @return mixed
      */
@@ -57,13 +57,13 @@ class DonorController extends Controller
     }
 
     /**
-     * Creates a new Donor model.
+     * Creates a new Campaign model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Donor();
+        $model = new Campaign();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -75,7 +75,7 @@ class DonorController extends Controller
     }
 
     /**
-     * Updates an existing Donor model.
+     * Updates an existing Campaign model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -94,7 +94,7 @@ class DonorController extends Controller
     }
 
     /**
-     * Deletes an existing Donor model.
+     * Deletes an existing Campaign model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -107,15 +107,15 @@ class DonorController extends Controller
     }
 
     /**
-     * Finds the Donor model based on its primary key value.
+     * Finds the Campaign model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Donor the loaded model
+     * @return Campaign the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Donor::findOne($id)) !== null) {
+        if (($model = Campaign::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

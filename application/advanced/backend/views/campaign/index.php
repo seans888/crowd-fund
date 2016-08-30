@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\DonorSearch */
+/* @var $searchModel app\models\CampaignSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Donors';
+$this->title = 'Campaigns';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="donor-index">
+<div class="campaign-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Donor', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Campaign', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -25,9 +25,9 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'donor_fname',
-            'donor_lname',
-            'donor_address',
+            'campaign_name',
+            'campaign_type',
+            'donor_Id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
