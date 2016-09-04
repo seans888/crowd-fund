@@ -10,7 +10,8 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p> asdasdasdasda
+    <p> Mission & Vision
+
 	</p>
 
     <code><?= __FILE__ ?></code>

@@ -10,7 +10,7 @@ $this->title = 'Crowd Funding';
     <div class="jumbotron">
         <h1>Aruga at Kalinga Foundation Inc.</h1>
         <p class="lead"></p>
-        <p><a class="btn btn-lg btn-success" href="http://www.youtube.com ">Donate money</a></p>
+        <p><a class="btn btn-lg btn-success" href="http://localhost/crowdfund/frontend/web/index.php?r=site%2Fsignup ">Donate money</a></p>
     </div>
 
 	<style>
@@ -26,14 +26,14 @@ $this->title = 'Crowd Funding';
                 <p> Give a place to live  </p>
 				
 
-                <p><a class="btn btn-default" href="http://www.Google.com ">View project &raquo;</a></p>
+                <p><a class="btn btn-default" href="new.php">View project &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Scholarship</h2>
 				<img src="c7.jpg" width="300" height="100" alt="BURGER">
                 <p> To help the children who's eager to learn and be educated</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">View project &raquo;</a></p>
+                <p><a class="btn btn-default" href="new.php">View project &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Feeding Program</h2>
@@ -42,7 +42,7 @@ $this->title = 'Crowd Funding';
 
                 <p> To help adults and children who's malnourish</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">View project &raquo;</a></p>
+                <p><a class="btn btn-default" href="new.php">View project &raquo;</a></p>
             </div>
         </div>
 
